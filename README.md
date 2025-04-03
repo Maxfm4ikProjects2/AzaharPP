@@ -1,24 +1,14 @@
-<b>AzaharPlus</b> is a fork of the Azahar 3DS emulator that restores some features.
-
-Each version is the same as the corresponding version of Azahar exept for these features:
-- Support of 3DS files. If a file works with earlier Citra forks, it works with AzaharPlus.
-- Ability to download system files from official servers. No need for an actual 3DS.
-
-Below is the readme from Azahar, unchanged.
-
----
-
-![Azahar Emulator](https://azahar-emu.org/resources/images/logo/azahar-name-and-logo.svg)
+![Azahar Emulator](https://github.com/user-attachments/assets/c04a1016-3488-441d-bb2c-2dfce3a23fda)
 
 ![GitHub Release](https://img.shields.io/github/v/release/azahar-emu/azahar?label=Current%20Release)
 ![GitHub Downloads](https://img.shields.io/github/downloads/azahar-emu/azahar/total?logo=github&label=GitHub%20Downloads) <!-- ![Flathub Downloads](https://img.shields.io/flathub/downloads/org.azahar-emu.azahar?logo=Flathub&label=Flathub%20Downloads) -->
 ![CI Build Status](https://github.com/azahar-emu/azahar/actions/workflows/build.yml/badge.svg)
 
-<b>Azahar</b> is an open-source 3DS emulator project based on Citra.
+<b>Azahar++</b> is an fork of Azahar, with restored features
+Azahar++ exist in case of AzaharPlus getting down, thanks to AzaharPlus Developer to make NUS support restoration!
 
-It was created from the merging of PabloMK7's Citra fork and the Lime3DS project, both of which emerged shortly after Citra was taken down.
-
-The goal of this project is to be the de-facto platform for future development.
+This fork is going to constantly update with Azahar, and AzaharPlus.
+### Below is the unchanged Azahar README, also support won't be provided here.
 
 # Installation
 
