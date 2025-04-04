@@ -1,4 +1,4 @@
-![Azahar Emulator](https://github.com/user-attachments/assets/c04a1016-3488-441d-bb2c-2dfce3a23fda)
+![Azahar Emulator](https://i.ibb.co/ksCF84DD/azahar-1.png)
 
 ![GitHub Release](https://img.shields.io/github/v/release/azahar-emu/azahar?label=Current%20Release)
 ![GitHub Downloads](https://img.shields.io/github/downloads/azahar-emu/azahar/total?logo=github&label=GitHub%20Downloads) <!-- ![Flathub Downloads](https://img.shields.io/flathub/downloads/org.azahar-emu.azahar?logo=Flathub&label=Flathub%20Downloads) -->
