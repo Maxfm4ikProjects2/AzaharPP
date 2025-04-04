@@ -4,6 +4,9 @@
 ![GitHub Downloads](https://img.shields.io/github/downloads/azahar-emu/azahar/total?logo=github&label=GitHub%20Downloads) <!-- ![Flathub Downloads](https://img.shields.io/flathub/downloads/org.azahar-emu.azahar?logo=Flathub&label=Flathub%20Downloads) -->
 ![CI Build Status](https://github.com/azahar-emu/azahar/actions/workflows/build.yml/badge.svg)
 
+> [!WARNING]
+> We are just a **fork of Azahar**. If you encounter any bugs in Azahar, **please report them to the original maintainers**, not us. We are only making some changes and are not responsible for any bugs, **as we are neither maintainers nor contributors of the main Azahar repository**.
+
 <b>Azahar++</b> is an fork of Azahar, with restored features
 Azahar++ exist in case of AzaharPlus getting down, thanks to AzaharPlus Developer to make NUS support restoration!
 
@@ -14,13 +17,13 @@ This fork is going to constantly update with Azahar, and AzaharPlus.
 
 ### Windows
 
-Download the latest release from [Releases](https://github.com/azahar-emu/azahar/releases).
+Download the latest release from [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases).
 
 If you are unsure of whether you want to use MSYS2 or MSVC, use MSYS2.
 
 ### MacOS
 
-Download the latest release from [Releases](https://github.com/azahar-emu/azahar/releases).
+Download the latest release from [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases).
 
 The `macos-universal` download will work on both Intel and Apple Silicon Macs.
 
@@ -31,18 +34,18 @@ The recommended method of downloading Azahar on Android is via the [Google Play 
 Alternatively, you can install the app using Obtainium:
 1. Download and install Obtainium from [here](https://github.com/ImranR98/Obtainium/releases) (use the file named `app-release.apk`)
 2. Open Obtainium and click 'Add App'
-3. Type `https://github.com/azahar/azahar-emu` into the 'App Source URL' section
+3. Type `https://github.com/Maxfm4ikProjects2/AzaharPP` into the 'App Source URL' section
 4. Click 'Add'
 5. Click 'Install'
 
-If you wish, you can also simply install the latest APK from the [Releases](https://github.com/azahar-emu/azahar/releases) page.
+If you wish, you can also simply install the latest APK from the [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases) page.
 
 Keep in mind that you will not recieve automatic updates when installing via the APK.
 
 ---
 ### Linux
 
-Azahar is available as an AppImage on the [Releases](https://github.com/azahar-emu/azahar/releases) page.
+Azahar is available as an AppImage on the [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases) page.
 
 A Flatpak distribution is currently being worked on.
 <!--
@@ -53,7 +56,7 @@ We are also on Flathub:
 
 # Build instructions
 
-Please refer this repository's [wiki](https://github.com/azahar-emu/azahar/wiki/Building-From-Source) for build instructions
+Please refer this official Azahar [wiki](https://github.com/azahar-emu/azahar/wiki/Building-From-Source) for build instructions
 
 # How can I contribute?
 
