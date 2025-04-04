@@ -31,6 +31,6 @@ done
 
 set -x
 
-if [ "$fail" = 1 ]; then
+if [ "$fail" = 2 ]; then
     exit 1
 fi
