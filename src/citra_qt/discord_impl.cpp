@@ -42,12 +42,12 @@ void DiscordImpl::Update() {
 
     DiscordRichPresence presence{};
     presence.largeImageKey = "logo";
-    presence.largeImageText = "An open source emulator for the Nintendo 3DS";
+    presence.largeImageText = "An fork of Azahar 3DS Emulator.";
     if (is_powered_on) {
         presence.state = title.c_str();
         presence.details = "Currently in game";
     } else {
-        presence.details = "Not in game";
+        presence.details = "Unknown (Unable to detect if game is played or not.)";
     }
     presence.startTimestamp = start_time;
     Discord_UpdatePresence(&presence);
