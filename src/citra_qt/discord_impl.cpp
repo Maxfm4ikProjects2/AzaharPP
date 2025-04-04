@@ -47,7 +47,7 @@ void DiscordImpl::Update() {
         presence.state = title.c_str();
         presence.details = "Currently in game";
     } else {
-        presence.details = "Unknown (Unable to detect if game is played or not.)";
+        presence.details = "Unknown";
     }
     presence.startTimestamp = start_time;
     Discord_UpdatePresence(&presence);
