@@ -15,7 +15,7 @@ cmake .. -GNinja \
 	"${EXTRA_CMAKE_FLAGS[@]}"
 ninja
 ninja bundle
-mv ./bundle/azaharpp.app ./bundle/Azaharpp.app # TODO: Can this be done in CMake?
+mv ./bundle/azahar.app ./bundle/Azahar.app # TODO: Can this be done in CMake?
 
 ccache -s -v
 
