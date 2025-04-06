@@ -298,7 +298,7 @@ void LaunchSdlFrontend(int argc, char** argv) {
             }
             case 'v':
                 const std::string version_string =
-                    std::string("Azahar ") + Common::g_build_fullname;
+                    std::string("AzaharPP ") + Common::g_build_fullname;
                 ShowCommandOutput("Version", version_string);
                 exit(0);
             }
@@ -391,7 +391,7 @@ void LaunchSdlFrontend(int argc, char** argv) {
 
     const auto scope = emu_window->Acquire();
 
-    LOG_INFO(Frontend, "Azahar Version: {} | {}-{}", Common::g_build_fullname, Common::g_scm_branch,
+    LOG_INFO(Frontend, "Azahar++ Version: {} | {}-{}", Common::g_build_fullname, Common::g_scm_branch,
              Common::g_scm_desc);
     Settings::LogSettings();
 

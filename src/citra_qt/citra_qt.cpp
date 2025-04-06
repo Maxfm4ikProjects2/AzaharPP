@@ -291,7 +291,7 @@ GMainWindow::GMainWindow(Core::System& system_)
         }
 
         if (args[i] == QStringLiteral("--version") || args[i] == QStringLiteral("-v")) {
-            const std::string version_string = std::string("Azahar ") + Common::g_build_fullname;
+            const std::string version_string = std::string("AzaharPP ") + Common::g_build_fullname;
             ShowCommandOutput("Version", version_string);
             exit(0);
         }
@@ -362,7 +362,7 @@ GMainWindow::GMainWindow(Core::System& system_)
     ConnectMenuEvents();
     ConnectWidgetEvents();
 
-    LOG_INFO(Frontend, "Azahar Version: {} | {}-{}", Common::g_build_fullname, Common::g_scm_branch,
+    LOG_INFO(Frontend, "Azahar++ Version: {} | {}-{}", Common::g_build_fullname, Common::g_scm_branch,
              Common::g_scm_desc);
 #if CITRA_ARCH(x86_64)
     const auto& caps = Common::GetCPUCaps();
@@ -745,7 +745,7 @@ void GMainWindow::InitializeHotkeys() {
     link_action_shortcut(ui->action_Load_File, QStringLiteral("Load File"));
     link_action_shortcut(ui->action_Load_Amiibo, QStringLiteral("Load Amiibo"));
     link_action_shortcut(ui->action_Remove_Amiibo, QStringLiteral("Remove Amiibo"));
-    link_action_shortcut(ui->action_Exit, QStringLiteral("Exit Azahar"));
+    link_action_shortcut(ui->action_Exit, QStringLiteral("Exit Azahar++"));
     link_action_shortcut(ui->action_Restart, QStringLiteral("Restart Emulation"));
     link_action_shortcut(ui->action_Pause, QStringLiteral("Continue/Pause Emulation"));
     link_action_shortcut(ui->action_Stop, QStringLiteral("Stop Emulation"));
@@ -1150,7 +1150,7 @@ static std::optional<QDBusObjectPath> HoldWakeLockLinux(u32 window_id = 0) {
     //: TRANSLATORS: This string is shown to the user to explain why Citra needs to prevent the
     //: computer from sleeping
     options.insert(QString::fromLatin1("reason"),
-                   QCoreApplication::translate("GMainWindow", "Azahar is running an application"));
+                   QCoreApplication::translate("GMainWindow", "Azahar++ is running an application"));
     // 0x4: Suspend lock; 0x8: Idle lock
     QDBusReply<QDBusObjectPath> reply =
         xdp.call(QString::fromLatin1("Inhibit"),
@@ -2341,9 +2341,9 @@ void GMainWindow::UninstallTitles(
     future_watcher.waitForFinished();
 
     if (failed) {
-        QMessageBox::critical(this, tr("Azahar"), tr("Failed to uninstall '%1'.").arg(failed_name));
+        QMessageBox::critical(this, tr("Azahar++"), tr("Failed to uninstall '%1'.").arg(failed_name));
     } else if (!future_watcher.isCanceled()) {
-        QMessageBox::information(this, tr("Azahar"),
+        QMessageBox::information(this, tr("Azahar++"),
                                  tr("Successfully uninstalled '%1'.").arg(first_name));
     }
 }
@@ -2973,7 +2973,7 @@ void GMainWindow::OnOpenFFmpeg() {
 
     for (auto& library_name : library_names) {
         if (!FileUtil::Exists(bin_dir + DIR_SEP + library_name)) {
-            QMessageBox::critical(this, tr("Azahar"),
+            QMessageBox::critical(this, tr("Azahar++"),
                                   tr("The provided FFmpeg directory is missing %1. Please make "
                                      "sure the correct directory was selected.")
                                       .arg(QString::fromStdString(library_name)));
@@ -2997,9 +2997,9 @@ void GMainWindow::OnOpenFFmpeg() {
     FileUtil::ForeachDirectoryEntry(nullptr, bin_dir, process_file);
 
     if (success.load()) {
-        QMessageBox::information(this, tr("Azahar"), tr("FFmpeg has been sucessfully installed."));
+        QMessageBox::information(this, tr("Azahar++"), tr("FFmpeg has been sucessfully installed."));
     } else {
-        QMessageBox::critical(this, tr("Azahar"),
+        QMessageBox::critical(this, tr("Azahar++"),
                               tr("Installation of FFmpeg failed. Check the log file for details."));
     }
 }
@@ -3395,7 +3395,7 @@ bool GMainWindow::ConfirmClose() {
     }
 
     QMessageBox::StandardButton answer =
-        QMessageBox::question(this, tr("Azahar"), tr("Would you like to exit now?"),
+        QMessageBox::question(this, tr("Azahar++"), tr("Would you like to exit now?"),
                               QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
     return answer != QMessageBox::No;
 }
@@ -3640,12 +3640,12 @@ void GMainWindow::OnEmulatorUpdateAvailable() {
     update_prompt.setIcon(QMessageBox::Information);
     update_prompt.addButton(QMessageBox::Yes);
     update_prompt.addButton(QMessageBox::Ignore);
-    update_prompt.setText(tr("Update %1 for Azahar is available.\nWould you like to download it?")
+    update_prompt.setText(tr("Update %1 for Azahar++ is available.\nWould you like to download it?")
                               .arg(version_string));
     update_prompt.exec();
     if (update_prompt.button(QMessageBox::Yes) == update_prompt.clickedButton()) {
         QDesktopServices::openUrl(
-            QUrl(QString::fromStdString("https://azahar-emu.org/pages/download/")));
+            QUrl(QString::fromStdString("https://github.com/Maxfm4ikProjects2/AzaharPP/releases/latest")));
     }
 }
 #endif
@@ -3654,12 +3654,12 @@ void GMainWindow::UpdateWindowTitle() {
     const QString full_name = QString::fromUtf8(Common::g_build_fullname);
 
     if (game_title.isEmpty()) {
-        setWindowTitle(QStringLiteral("Azahar %1").arg(full_name));
+        setWindowTitle(QStringLiteral("Azahar++ %1").arg(full_name));
     } else {
-        setWindowTitle(QStringLiteral("Azahar %1 | %2").arg(full_name, game_title));
+        setWindowTitle(QStringLiteral("Azahar++ %1 | %2").arg(full_name, game_title));
         render_window->setWindowTitle(
-            QStringLiteral("Azahar %1 | %2 | %3").arg(full_name, game_title, tr("Primary Window")));
-        secondary_window->setWindowTitle(QStringLiteral("Azahar %1 | %2 | %3")
+            QStringLiteral("Azahar++ %1 | %2 | %3").arg(full_name, game_title, tr("Primary Window")));
+        secondary_window->setWindowTitle(QStringLiteral("Azahar++ %1 | %2 | %3")
                                              .arg(full_name, game_title, tr("Secondary Window")));
     }
 }
@@ -3819,8 +3819,8 @@ void LaunchQtFrontend(int argc, char* argv[]) {
 #endif
 
     // Init settings params
-    QCoreApplication::setOrganizationName(QStringLiteral("Azahar Developers"));
-    QCoreApplication::setApplicationName(QStringLiteral("Azahar"));
+    QCoreApplication::setOrganizationName(QStringLiteral("Azahar++ Developers"));
+    QCoreApplication::setApplicationName(QStringLiteral("Azahar++"));
 
     auto rounding_policy = GetHighDpiRoundingPolicy();
     QApplication::setHighDpiScaleFactorRoundingPolicy(rounding_policy);

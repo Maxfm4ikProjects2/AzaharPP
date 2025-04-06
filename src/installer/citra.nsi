@@ -17,8 +17,8 @@
   !error "PRODUCT_VARIANT must be defined"
 !endif
 
-!define PRODUCT_NAME "Azahar"
-!define PRODUCT_PUBLISHER "Azahar Emulator Developers"
+!define PRODUCT_NAME "AzaharPP"
+!define PRODUCT_PUBLISHER "Azahar++ Emulator Developers"
 !define PRODUCT_WEB_SITE "https://azahar-emu.org/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\${PRODUCT_NAME}.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
