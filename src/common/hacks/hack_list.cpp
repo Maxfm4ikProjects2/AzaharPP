@@ -108,7 +108,6 @@ HackManager hack_manager = {
                      0x000400000D40D200,
                  },
          }},
-#endif
 
         {HackType::REGION_FROM_SECURE,
          HackEntry{
@@ -157,6 +156,7 @@ HackManager hack_manager = {
                      0x0004013020003203, // New 3DS safe mode
                  },
          }},
+#endif
 
     }};
 }
