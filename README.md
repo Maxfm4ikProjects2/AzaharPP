@@ -1,36 +1,29 @@
-<b>AzaharPlus</b> is a fork of the Azahar 3DS emulator that restores some features.
-
-Each version is the same as the corresponding version of Azahar exept for these features:
-- Support of 3DS files. If a file works with earlier Citra forks, it works with AzaharPlus.
-- Ability to download system files from official servers. No need for an actual 3DS.
-
-Below is the readme from Azahar, unchanged.
-
----
-
-![Azahar Emulator](https://azahar-emu.org/resources/images/logo/azahar-name-and-logo.svg)
+![Azahar Emulator](https://github.com/user-attachments/assets/ae7559c9-e8b9-4540-a88d-aef13788a37a)
 
 ![GitHub Release](https://img.shields.io/github/v/release/azahar-emu/azahar?label=Current%20Release)
 ![GitHub Downloads](https://img.shields.io/github/downloads/azahar-emu/azahar/total?logo=github&label=GitHub%20Downloads) <!-- ![Flathub Downloads](https://img.shields.io/flathub/downloads/org.azahar-emu.azahar?logo=Flathub&label=Flathub%20Downloads) -->
 ![CI Build Status](https://github.com/azahar-emu/azahar/actions/workflows/build.yml/badge.svg)
 
-<b>Azahar</b> is an open-source 3DS emulator project based on Citra.
+> [!WARNING]
+> We are just a **fork of Azahar**. If you encounter any bugs in Azahar, **please report them to the original maintainers**, not us. We are only making some changes and are not responsible for any bugs, **as we are neither maintainers nor contributors of the main Azahar repository**.
 
-It was created from the merging of PabloMK7's Citra fork and the Lime3DS project, both of which emerged shortly after Citra was taken down.
+<b>Azahar++</b> is an fork of Azahar, with restored features
+Azahar++ exist in case of AzaharPlus getting down, thanks to AzaharPlus Developer to make NUS support restoration!
 
-The goal of this project is to be the de-facto platform for future development.
+This fork is going to constantly update with Azahar, and AzaharPlus.
+### Below is the unchanged Azahar README, also support won't be provided here.
 
 # Installation
 
 ### Windows
 
-Download the latest release from [Releases](https://github.com/azahar-emu/azahar/releases).
+Download the latest release from [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases).
 
 If you are unsure of whether you want to use MSYS2 or MSVC, use MSYS2.
 
 ### MacOS
 
-Download the latest release from [Releases](https://github.com/azahar-emu/azahar/releases).
+Download the latest release from [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases).
 
 The `macos-universal` download will work on both Intel and Apple Silicon Macs.
 
@@ -41,18 +34,18 @@ The recommended method of downloading Azahar on Android is via the [Google Play 
 Alternatively, you can install the app using Obtainium:
 1. Download and install Obtainium from [here](https://github.com/ImranR98/Obtainium/releases) (use the file named `app-release.apk`)
 2. Open Obtainium and click 'Add App'
-3. Type `https://github.com/azahar/azahar-emu` into the 'App Source URL' section
+3. Type `https://github.com/Maxfm4ikProjects2/AzaharPP` into the 'App Source URL' section
 4. Click 'Add'
 5. Click 'Install'
 
-If you wish, you can also simply install the latest APK from the [Releases](https://github.com/azahar-emu/azahar/releases) page.
+If you wish, you can also simply install the latest APK from the [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases) page.
 
 Keep in mind that you will not recieve automatic updates when installing via the APK.
 
 ---
 ### Linux
 
-Azahar is available as an AppImage on the [Releases](https://github.com/azahar-emu/azahar/releases) page.
+Azahar is available as an AppImage on the [Releases](https://github.com/Maxfm4ikProjects2/AzaharPP/releases) page.
 
 A Flatpak distribution is currently being worked on.
 <!--
@@ -63,7 +56,7 @@ We are also on Flathub:
 
 # Build instructions
 
-Please refer this repository's [wiki](https://github.com/azahar-emu/azahar/wiki/Building-From-Source) for build instructions
+Please refer this official Azahar [wiki](https://github.com/azahar-emu/azahar/wiki/Building-From-Source) for build instructions
 
 # How can I contribute?
 

@@ -11,7 +11,7 @@
 
 std::optional<std::string> UpdateChecker::CheckForUpdate() {
     constexpr auto UPDATE_CHECK_URL = "http://api.github.com";
-    constexpr auto UPDATE_CHECK_PATH = "/repos/azahar-emu/azahar/releases/latest";
+    constexpr auto UPDATE_CHECK_PATH = "/repos/Maxfm4ikProjects2/AzaharPP/releases/latest";
     constexpr std::size_t UPDATE_CHECK_TIMEOUT_SECONDS = 15;
 
     std::unique_ptr<httplib::Client> client = std::make_unique<httplib::Client>(UPDATE_CHECK_URL);
